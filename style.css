@@ -1,0 +1,147 @@
+/* Base styles for larger screens */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: 'Roboto', sans-serif; */
+  
+}
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 12px;
+    transition: transform 0.2s;
+}
+
+.team-member:hover {
+    transform: scale(1.03);
+}
+
+.team-img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+/* 
+.team-img:hover {
+    transform: scale(1.1);
+} */
+
+.team-member h5 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.team-member p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.view-profile {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    /* width:auto; */
+}
+
+.view-profile:hover {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for tablets and small screens */
+@media (max-width: 768px) {
+    .team-member {
+        margin-bottom: 30px;
+    }
+
+    .team-img {
+        border-radius: 8px;
+        width: 80%;
+    }
+
+    .team-member h5 {
+        font-size: 16px;
+    }
+
+    .team-member p {
+        font-size: 12px;
+    }
+
+    .view-profile {
+        padding: 8px;
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    .team-member {
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    .team-img {
+        border-radius: 6px;
+        width:80%
+    }
+
+    .team-member h5 {
+        font-size: 14px;
+    }
+
+    .team-member p {
+        font-size: 12px;
+    }
+
+    .view-profile {
+        padding: 8px;
+        margin-left: 40px;
+        font-size: 12px;
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+        margin: 0 3px;
+    }
+}
